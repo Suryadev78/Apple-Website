@@ -96,10 +96,9 @@ export default function Component() {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <img
-              src="/placeholder.svg?height=400&width=200"
-              alt="iPhone 15"
+              src="../public/iphone_15.png"
               width={200}
-              height={400}
+              height={300}
               className="mx-auto rounded-lg shadow-lg"
             />
           </motion.div>
