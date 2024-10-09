@@ -11,7 +11,7 @@ export default function Component() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-gray-900 text-white">
+      <header className="bg-black text-white">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -19,7 +19,7 @@ export default function Component() {
             transition={{ duration: 0.5 }}
           >
             <img
-              src="/placeholder.svg"
+              src="/applo_logo.png"
               alt="Apple Logo"
               width={30}
               height={30}
@@ -48,7 +48,7 @@ export default function Component() {
 
       {/* Mobile Menu */}
       <motion.div
-        className={`md:hidden bg-gray-900 text-white ${
+        className={`md:hidden bg-black text-white ${
           isMenuOpen ? "block" : "hidden"
         }`}
         initial={{ opacity: 0, height: 0 }}
@@ -72,7 +72,7 @@ export default function Component() {
       </motion.div>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+      <section className="py-20 bg-gradient-to-b from-black to-gray-800 text-white">
         <div className="container mx-auto px-4 text-center">
           <motion.h1
             className="text-5xl font-bold mb-6"
@@ -96,7 +96,7 @@ export default function Component() {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <img
-              src="../public/iphone_15.png"
+              src="/iphone_15.png"
               width={200}
               height={300}
               className="mx-auto rounded-lg shadow-lg"
@@ -106,9 +106,11 @@ export default function Component() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20">
+      <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Key Features</h2>
+          <h2 className="text-3xl text-white font-bold text-center mb-12">
+            Key Features
+          </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
