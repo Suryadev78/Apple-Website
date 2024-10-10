@@ -11,38 +11,31 @@ export default function HeroSection() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-black text-white">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <img
-              src="/applo_logo.png"
-              alt="Apple Logo"
-              width={30}
-              height={30}
-            />
-          </motion.div>
-          <nav className="hidden md:flex space-x-6">
-            {["Home", "Features", "Specs", "Buy"].map((item) => (
-              <motion.a
-                key={item}
-                href="#"
-                className="hover:text-gray-300 transition-colors"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {item}
-              </motion.a>
-            ))}
-          </nav>
-          <div className="md:hidden">
-            <Button variant="ghost" size="icon" onClick={toggleMenu}>
-              {isMenuOpen ? <X /> : <Menu />}
-            </Button>
-          </div>
+      <header className="bg-black text-white py-4 px-4 flex justify-between items-center">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <img src="/applo_logo.png" alt="Apple Logo" width={30} height={30} />
+        </motion.div>
+        <nav className="hidden md:flex space-x-6">
+          {["Home", "Features", "Specs", "Buy"].map((item) => (
+            <motion.a
+              key={item}
+              href="#"
+              className="hover:text-gray-300 transition-colors"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              {item}
+            </motion.a>
+          ))}
+        </nav>
+        <div className="md:hidden">
+          <Button variant="ghost" size="icon" onClick={toggleMenu}>
+            {isMenuOpen ? <X /> : <Menu />}
+          </Button>
         </div>
       </header>
 
@@ -151,7 +144,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Get Your iPhone 15 Today
+            Get Your iPhone 16 Today
           </motion.h2>
           <motion.p
             className="text-xl mb-8"
